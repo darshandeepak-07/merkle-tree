@@ -15,7 +15,5 @@ func main() {
 		"e9a66845e05d5abc0ad04ec80f774a7e585c6e8db975962d069a522137b80c1d",
 	}
 	rootNode := builder.BuildMerkleTree(transactions)
-	log.Println(rootNode.Hash)
-
 	builder.CheckIfTransactionExist("6359f0868171b1d194cbee1af2f16ea598ae8fad666d9b012c8ed2b79a236ec4", rootNode)
 }
